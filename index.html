@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ideogram 4 Hits 0.97 OCR vs Seedream 5.5&#x27;s Clearer Text</title><style>body{max-width:760px;margin:0 auto;padding:24px;font-family:Georgia,serif;line-height:1.7;color:#222}img{max-width:100%;height:auto;border-radius:6px}table{margin:1em 0;border:1px solid #ddd;border-collapse:collapse;width:100%}th,td{border:1px solid #ddd;text-align:left;vertical-align:top;padding:8px 10px}th{background:#f4f4f2;font-weight:600}pre{overflow:auto;background:#f6f6f4;padding:14px 16px;border-radius:6px;font-size:13px;line-height:1.5}code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em}figcaption,em.source{display:block;font-size:.92em;color:#444}</style></head><body><article>
+<h1>Ideogram 4 Hits 0.97 OCR vs Seedream 5.5&#x27;s Clearer Text</h1>
+<p><img alt="Cover for Ideogram 4 vs Seedream 5.5: 0.97 OCR versus clearer text" src="cover.jpg" /></p>
+<p>Ideogram 4 hits 0.97 English OCR on its own official table; Seedream 5.5 ships clearer text, including complex character shapes and densely arranged small type. Both treat on-image lettering as a headline capability, and they publish different kinds of evidence. Ideogram 4's technical post of 3 June 2026 puts that 0.97, on the X-Omni benchmark, on a vendor results table. Seedream 5.5, launched 9 November, describes the upgrade as significant and reports “leading results in text structure.” Those two statements sit side by side, and they already tell you which tool fits which job.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Ideogram 4's lettering claim is a vendor benchmark number.</strong> The official technical post describes a 9.3-billion-parameter open-weight DiT, 34 layers, trained on structured JSON captions with optional bounding boxes and palettes, and reports 0.97 on X-Omni English OCR accuracy for in-image text. Layout control is a separate cell, 0.69 mIoU on 7Bench — whether objects sit in requested boxes, not whether letters can be read. The 0.97 is English OCR, on a named bench, published by the vendor.</li>
+<li><strong>Seedream 5.5's lettering claim is a qualitative official upgrade.</strong> The 9 November Seed post lists “more realistic images and clearer text” as the third of three upgrades. It says text rendering “improves significantly,” including complex character shapes and dense small type, and reports “leading results in text structure and text-to-image realism” against “other major models.”</li>
+<li><strong>The only recent third-party text pass in this window passed everyone who sat it.</strong> CHOOSETO.AI, on 10 November, gave four models a café menu in English and Spanish, 49 words, and reported that all four got it right, including Seedream 5.5. Ideogram 4 was not in that four. A ceiling-effect pass is a compliment to the field, and it does not pick a winner in this pair.</li>
+<li><strong>The models are different tools.</strong> Ideogram 4 is a text-to-image model with declared layout control. Seedream 5.5 is an image model whose launch emphasizes multi-turn editing and then, third, realism and type. A poster specified in JSON, and a poster that has to survive twenty rounds of edits, are not the same job.</li>
+<li><strong>The <a href="https://ideogram4.co/">Ideogram 4</a> workspace this article links runs Ideogram 4.</strong> Ideogram 4.5, released 30 September as an edit-first model, is a separate SKU. Seedream 5.5 is the current Seedream flagship; 5.0 Pro appears only in cited test rows.</li>
+</ul>
+<h2>Ideogram 4 vs Seedream 5.5 at a Glance</h2>
+<table>
+<thead>
+<tr><th>Dimension</th><th>Ideogram 4</th><th>Seedream 5.5</th><th>Source</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Developer</strong></td><td>Ideogram</td><td>ByteDance Seed</td><td>Official posts</td></tr>
+<tr><td><strong>Release</strong></td><td>3 June 2026</td><td>9 November 2026</td><td>Official posts</td></tr>
+<tr><td><strong>What the model is</strong></td><td>9.3B open-weight single-stream DiT, 34 layers; JSON prompts, optional boxes and palettes</td><td>Image creation and multi-turn editing; native RGBA; realism and type as a third upgrade</td><td>Ideogram technical post; Seed blog</td></tr>
+<tr><td><strong>On-image text, official evidence</strong></td><td>0.97 X-Omni English OCR, on the vendor table; layout 0.69 mIoU on 7Bench</td><td>“Clearer text”; “complex character shapes and densely arranged small text”; vendor “leading results in text structure”</td><td>Same</td></tr>
+<tr><td><strong>CHOOSETO café menu, 10 November</strong></td><td>Not in the four-model set</td><td>Reported correct, with three other models, on 49 words</td><td>CHOOSETO.AI</td></tr>
+<tr><td><strong>Related SKU, not this comparison</strong></td><td>Ideogram 4.5, an edit-first model, 30 September</td><td>Seedream 5.0 Pro appears only in cited test rows, not as a rival here</td><td>Official pages; CHOOSETO</td></tr>
+</tbody>
+</table>
+<pre><code>  Ideogram 4                         Seedream 5.5
+  ----------                         ------------
+  vendor OCR: 0.97 X-Omni (English)  official wording: clearer text,
+  JSON layout, optional bounding     dense small type, complex shapes
+  boxes; layout 0.69 mIoU            100-round editing and native RGBA</code></pre>
+<h2>Two Official Stories About Type</h2>
+<p>Ideogram 4's June post is a model card in essay form: a 34-layer single-stream DiT, prompts parsed as JSON and validated against a schema, and a text-rendering cell of 0.97, defined as X-Omni English OCR accuracy on in-image text. Layout control is a separate cell, 0.69 mIoU on 7Bench. The 0.97 is English, which is the language that cell actually measures, and the natural sweet spot for a poster or a logo whose letters have to be read.</p>
+<p>Seedream 5.5's November post is a launch announcement. The first two upgrades — 100-round editing and native RGBA — have drawn most of the week's commentary. The third is the one that belongs here: lighting and materials described as more natural, and text described as significantly improved, including complex character shapes and densely arranged small text. “Leading results in text structure and text-to-image realism” is Seed's evaluation against “other major models.” Put next to Ideogram's 0.97, it is a different kind of official evidence: a qualitative upgrade on a model whose first job is to keep editing the same still.</p>
+<h2>What a Recent Test Showed</h2>
+<p>CHOOSETO.AI's 10 November video is mainly a 15-edit drift test. In a side task, a café menu in English and Spanish, 49 words, all four models were reported correct. If four models all pass, the task is at a ceiling; Ideogram 4 was not one of the four, so the pass is a data point for Seedream 5.5's lettering and not a ranking of this pair.</p>
+<p>Quantslant and Voyager, in this window, wrote about Ideogram 4.5's repeated-edit behavior and about 4.5 versus 4.0 on posters. Those pieces are about a different SKU, or a choice inside Ideogram's own line. They stay off this comparison.</p>
+<h2>Which One Should You Use?</h2>
+<h3>Choose Ideogram 4 if:</h3>
+<ul>
+<li>You need a declared layout path — JSON, optional bounding boxes, a palette — and you want the vendor's 0.97 English OCR figure in view as a published number.</li>
+<li>You are generating a poster or a logo as a new image, rather than revising an already approved still for the twentieth time.</li>
+<li>English lettering is the main deliverable, which is the language the X-Omni cell on the official table actually measures.</li>
+</ul>
+<h3>Choose Seedream 5.5 if:</h3>
+<ul>
+<li>The job is a still you already have, and the next work is a round of edits that has to leave the rest of the picture alone. That is the first official upgrade, and lettering sits inside that same multi-turn story.</li>
+<li>You care about the 9 November wording on complex character shapes and dense small type — the official description of how 5.5 handles difficult lettering.</li>
+<li>Native RGBA, the second official upgrade, is part of the same delivery.</li>
+</ul>
+<p>The decision is about the job: specified layout and a published English OCR cell on one side, multi-turn editing and a qualitative type upgrade on the other. The linked workspace runs Ideogram 4, which is the model with the 0.97 on the table.</p>
+<p><img alt="Official Ideogram 4 technical post, showing the vendor&#x27;s 0.97 X-Omni English OCR cell for in-image text" src="figure.jpg" /></p>
+<p><em>Source: <a href="https://ideogram.ai/blog/ideogram-4.0/">Ideogram, “Ideogram 4.0 Technical Details”</a>, 3 June 2026, the text-rendering row on the official results table (X-Omni English OCR, 0.97). The crop is that table; it does not include plan or rate information.</em></p>
+</article></body></html>
